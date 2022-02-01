@@ -147,7 +147,7 @@ ul {
 }
 .site-nav .link.current::after {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   right: 0;
   content: '';
 
@@ -550,7 +550,8 @@ ul {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform var(--time) var(--timing-function);
+  transition: transform var(--time) var(--timing-function),
+    opacity var(--time) var(--timing-function);
 
   opacity: 0;
 }
