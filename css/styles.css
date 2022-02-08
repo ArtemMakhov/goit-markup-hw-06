@@ -232,6 +232,7 @@ textarea {
   letter-spacing: 0.06em;
   border-radius: 4px;
   font-family: inherit;
+  border: transparent;
   cursor: pointer;
 }
 
@@ -457,6 +458,9 @@ textarea {
 .main-footer {
   padding: 60px 0;
   background-color: var(--background-color-footer);
+}
+.footer-address {
+  flex-grow: 1;
 }
 
 .footer-networks {
@@ -699,12 +703,17 @@ textarea {
   display: block;
   margin-bottom: 4px;
   text-align: left;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
 
 .form-input {
   width: 100%;
   height: 40px;
   margin: 0;
+
   padding-left: 42px;
 
   border-radius: 4px;
@@ -713,10 +722,9 @@ textarea {
 }
 .modal-icon {
   position: absolute;
-  top: 50%;
-  left: 13px;
-  transform: translateY(-50%);
-  display: inline-block;
+  bottom: 50%;
+  left: 12px;
+  transform: translateY(100%);
 }
 .form-input:focus + .modal-icon {
   fill: var(--accent-color);
@@ -724,6 +732,10 @@ textarea {
 .form-comments {
   display: flex;
   flex-direction: column;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 
   text-align: left;
   margin-bottom: 20px;
@@ -735,15 +747,12 @@ textarea {
   border-radius: 4px;
   outline-color: var(--accent-color);
 }
-.form-textarea ::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-
+.form-textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-checkbox {
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 14px;
   line-height: 1.71;
@@ -764,6 +773,7 @@ textarea {
   width: 16px;
   height: 15px;
   margin-right: 7px;
+
   border-radius: 2px;
 
   transition: background-color var(--time) var(--timing-function),
@@ -780,6 +790,7 @@ textarea {
 }
 
 .modal-link {
+  margin-left: 7px;
   color: var(--accent-color);
   outline-color: var(--accent-color);
 }
